@@ -1,0 +1,132 @@
+html {
+    height: 100%;
+}
+
+body {
+    /*width: 800px;*/
+    margin: 20px;
+    min-height: 80%;
+}
+
+header {
+    background-color: rgb(74, 79, 86);
+    font-family: Trebuchet, Arial, sans-serif;
+    text-align: center;
+    color: rgb(235, 126, 127);
+    padding: 2px;
+}
+
+h1 {
+    margin: 10px;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+main {
+    background: rgb(59, 63, 69); 
+    font-family: Trebuchet, Arial, sans-serif;
+    text-align: center;
+    /*height: 85vh;*/
+    height: 100%;
+}
+
+.container  {
+    width: 70%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+form {
+    text-align: left;
+    /*width: 60%;*/
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background-color: rgb(136, 131, 158);
+    border-top: 2px solid rgb(136,131,158);
+    border-bottom: 2px solid rgb(136,131,158);
+    padding-left: 10px;
+}
+
+li:nth-child(even) {
+    background-color: rgb(122, 117, 147);
+    border-top: 2px solid rgb(122, 117, 147);
+    border-bottom: 2px solid rgb(122, 117, 147);
+}
+
+li:hover {
+    background-color: rgb(98, 94, 119);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    transition: all .1s ease-in;    
+}
+
+li:active {
+    background-color: red;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    transition: all .1s ease-in;    
+}
+
+label {
+    display: block;
+}
+
+div {
+    display: inline-block;
+}
+
+h2 {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    padding-left: 5px;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+
+h2 + span {
+    color: rgb(205 , 203, 203);
+    font-size: 12px;
+}
+
+input[type=checkbox] {
+    height: 18px;
+    width: 18px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+input[type=checkbox]:checked + .dishes>h2,
+input[type=checkbox]:checked + .dishes>span
+ {
+    text-decoration: line-through;
+    color: rgb(163, 160, 181);
+}
+
+input[type=button] {
+    height: 40px;
+    width: 100%;
+    margin: 30px 0;
+    padding: 0;
+    background-color: rgb(74, 79, 86);
+    border: none;
+    color: rgb(235, 126, 127);
+    font-size: 18px;
+}
+
+input[type=button]:active {
+    background-color: red;
+    transition: all .1s ease-in;    
+}
